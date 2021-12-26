@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+<link rel="stylesheet" href="doi-tra.css">
+<title>Đổi/trả sản phẩm</title>
+</head>
+<body>
+     <header>
+         <h1>PHIẾU ĐĂNG KÝ ĐỔI/TRẢ SẢN PHẨM</h1>
+        </header>
+        <main>
+         <p> <strong>Điền thông tin vào mẫu đăng ký đổi-trả online dưới đây.Form đăng ký đổi-trả : </strong></p>
+                <input id="name" class="form-control"  type="text" placeholder="Họ và tên" </input>
+                <input id="id" class="form-control"  type="text" placeholder="Mã đơn hàng" </input>
+                <p><strong>Để đổi/trả một (hoặc nhiều) sản phẩm trong cùng một đơn hàng, quý khách vui lòng điền đầy đủ thông tin vào phiếu.</strong></p>
+              
+<!-- Điền sản phẩm muốn đổi trả -->
+            <section id ="san-pham">
+                <div id="menu">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tên sản phẩm</th>
+                                <th>Số lượng</th>
+                                <th>Lý do đổi trả hàng</th>
+                                <th>Hướng giải quyết mong muốn</th>
+                                <th>Link sản phẩm muốn đổi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input  id="ProductReturns_0__ProductName" class="form-control" name="ProductReturns[0].ProductName" type="text" value=""></td>
+                                <td><input  id="ProductReturns_0__Quantity" class="form-control" name="ProductReturns[0].Quantity" style="width:60px;" type="text" value=""></td>
+                                <td><textarea  cols="20" id="ProductReturns_0__ReasonReturn" class="form-control" name="ProductReturns[0].ReasonReturn" rows="2"></textarea></td>
+                                <td>
+                                    <div>
+                                        <label>
+                                            <input data-val="true" data-val-required="The SolutionReturnProduct field is required." id="ProductReturns_0__SolutionReturnProduct" name="ProductReturns[0].SolutionReturnProduct" type="checkbox" value="true"><input name="ProductReturns[0].SolutionReturnProduct" type="hidden" value="false">
+                                            Đổi sản phẩm cùng loại
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input data-val="true" data-val-required="The SolutionReturnOtherProduct field is required." id="ProductReturns_0__SolutionReturnOtherProduct" name="ProductReturns[0].SolutionReturnOtherProduct" type="checkbox" value="true"><input name="ProductReturns[0].SolutionReturnOtherProduct" type="hidden" value="false">
+                                            Đổi sản phẩm khác loại 
+                                        </label>
+                                    </div>
+                                    <div >
+                                        <label>
+                                            <input data-val="true" data-val-required="The SolutionReturnMoney field is required." id="ProductReturns_0__SolutionReturnMoney" name="ProductReturns[0].SolutionReturnMoney" type="checkbox" value="true"><input name="ProductReturns[0].SolutionReturnMoney" type="hidden" value="false">
+                                            Trả và hoàn tiền
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <input  id="ProductReturns_0__LinkProductToChange" class="form-control" name="ProductReturns[0].LinkProductToChange" type="text" value="">
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td><input  id="ProductReturns_1__ProductName" class="form-control" name="ProductReturns[1].ProductName" type="text" value=""></td>
+                                <td><input  id="ProductReturns_1__Quantity" class="form-control" name="ProductReturns[1].Quantity" style="width:60px;" type="text" value=""></td>
+                                <td><textarea cols="20" id="ProductReturns_1__ReasonReturn" class="form-control" name="ProductReturns[1].ReasonReturn" rows="2"></textarea></td>
+                                <td>
+                                    <div >
+                                        <label>
+                                           <input data-val="true" data-val-required="The SolutionReturnProduct field is required." id="ProductReturns_1__SolutionReturnProduct" name="ProductReturns[1].SolutionReturnProduct" type="checkbox" value="true"><input name="ProductReturns[1].SolutionReturnProduct" type="hidden" value="false">
+                                            Đổi sản phẩm cùng loại
+                                        </label>
+                                    </div>
+                                    <div >
+                                        <label>
+                                            <input data-val="true" data-val-required="The SolutionReturnOtherProduct field is required." id="ProductReturns_1__SolutionReturnOtherProduct" name="ProductReturns[1].SolutionReturnOtherProduct" type="checkbox" value="true"><input name="ProductReturns[1].SolutionReturnOtherProduct" type="hidden" value="false">
+                                            Đổi sản phẩm khác loại 
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input data-val="true" data-val-required="The SolutionReturnMoney field is required." id="ProductReturns_1__SolutionReturnMoney" name="ProductReturns[1].SolutionReturnMoney" type="checkbox" value="true"><input name="ProductReturns[1].SolutionReturnMoney" type="hidden" value="false">
+                                            Trả và hoàn tiền
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <input  id="ProductReturns_1__LinkProductToChange" class="form-control" name="ProductReturns[1].LinkProductToChange" type="text" value="">
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td><input  id="ProductReturns_2__ProductName" class="form-control" name="ProductReturns[2].ProductName" type="text" value=""></td>
+                                <td><input  id="ProductReturns_2__Quantity" class="form-control" name="ProductReturns[2].Quantity" style="width:60px;" type="text" value=""></td>
+                                <td><textarea  cols="20" id="ProductReturns_2__ReasonReturn" class="form-control" name="ProductReturns[2].ReasonReturn" rows="2"></textarea></td>
+                                <td>
+                                    <div >
+                                        <label>
+                                            <input data-val="true" data-val-required="The SolutionReturnProduct field is required." id="ProductReturns_2__SolutionReturnProduct" name="ProductReturns[2].SolutionReturnProduct" type="checkbox" value="true"><input name="ProductReturns[2].SolutionReturnProduct" type="hidden" value="false">
+                                            Đổi sản phẩm cùng loại
+                                        </label>
+                                    </div>
+                                    <div >
+                                        <label>
+                                            <input data-val="true" data-val-required="The SolutionReturnOtherProduct field is required." id="ProductReturns_2__SolutionReturnOtherProduct" name="ProductReturns[2].SolutionReturnOtherProduct" type="checkbox" value="true"><input name="ProductReturns[2].SolutionReturnOtherProduct" type="hidden" value="false">
+                                            Đổi sản phẩm khác loại 
+                                        </label>
+                                    </div>
+                                    <div >
+                                        <label>
+                                            <input data-val="true" data-val-required="The SolutionReturnMoney field is required." id="ProductReturns_2__SolutionReturnMoney" name="ProductReturns[2].SolutionReturnMoney" type="checkbox" value="true"><input name="ProductReturns[2].SolutionReturnMoney" type="hidden" value="false">
+                                            Trả và hoàn tiền
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <input  id="ProductReturns_2__LinkProductToChange" class="form-control" name="ProductReturns[2].LinkProductToChange" type="text" value="">
+                                </td>
+                            </tr>
+    
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+                                    
+            <section class="images">
+                <input id="image" class="form-control" type="text" placeholder="Hình ảnh thực tế"/>
+                <button id="upload-file" class="btn btn-secondary" ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                    <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                    <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                  </svg></button>
+            </section>
+                <p style="margin-top:20px;">
+                    <strong>Nếu yêu cầu Trả và hoàn tiền, quý khách vui lòng chọn hình thức hoàn tiền như sau :</strong>
+                </p>
+                <div  >
+                    <label>
+                        <input data-val="true" data-val-required="The tranferByCard field is required." id="TranferByCard_tranferByCard" name="TranferByCard.tranferByCard" type="checkbox" value="true"><input name="TranferByCard.tranferByCard" type="hidden" value="false">
+                        Chuyển khoản, với thông tin tài khoản :
+                    </label>
+                </div>
+    
+                <div id="ngan-hang">
+                        <input id="tai-khoan" class="form-control"  type="text" placeholder="Tên tài khoản" </input>   
+                        <input id="so-tai-khoan" class="form-control"  type="text" placeholder="Số tài khoản" </input>                            
+                        <input id="ngan-hang" class="form-control"  type="text" placeholder="Ngân hàng" </input>
+                        <input id="tinh-thanh" class="form-control"  type="text" placeholder="Tỉnh thành" </input>
+                        <input id="chi-nhanh" class="form-control"  type="text" placeholder="Chi nhánh" </input>
+                </div>
+    
+                <div >
+                    <label>
+                        <input data-val="true" data-val-required="The TranferByCash field is required." id="TranferByCash" name="TranferByCash" type="checkbox" value="true"><input name="TranferByCash" type="hidden" value="false">
+                        Tiền mặt (quý khách mang trả sản phẩm &amp; nhận tiền mặt tại văn phòng bookbuy.vn)
+                    </label>
+                </div>
+    
+                <div  >
+                    <label>
+                        <input data-val="true" data-val-required="The TranferByEmail field is required." id="TranferByEmail" name="TranferByEmail" type="checkbox" value="true"><input name="TranferByEmail" type="hidden" value="false">
+                        Hoàn trả bằng mã tiền điện tử qua email đặt hàng để quý khách mua sản phẩm khác.
+                    </label>
+                </div>
+    
+                <p>
+                    <strong>Lưu ý:</strong>  Quý khách chịu trách nhiệm về tính chính xác của tài khoản cung cấp, trong trường hợp có sai sót quý khách sẽ thanh toán phí thay đổi thông tin chuyển khoản. Nếu quý khách chuyển tiền qua cổng thanh toán trực tuyến, chúng tôi sẽ chuyển hoàn qua cổng thanh toán quý khách đã sử dụng.
+                </p>
+    
+                <p>
+                    <strong>
+                        Sản phẩm đổi trả bao gồm:
+                    </strong>
+                </p>
+    
+                <div  >
+                    <label>
+                        <input data-val="true" data-val-required="The WithCollectionOrdered field is required." id="WithCollectionOrdered" name="WithCollectionOrdered" type="checkbox" value="true"><input name="WithCollectionOrdered" type="hidden" value="false">
+                        Bộ sản phẩm đã mua
+                    </label>
+                </div>
+    
+                <div  >
+                    <label>
+                        <input data-val="true" data-val-required="The WithGift field is required." id="WithGift" name="WithGift" type="checkbox" value="true"><input name="WithGift" type="hidden" value="false">
+                        Quà tặng kèm (nếu có)
+                    </label>
+                </div>
+                <div >
+                    <label>
+                        <input data-val="true" data-val-required="The WithOrder field is required." id="WithOrder" name="WithOrder" type="checkbox" value="true"><input name="WithOrder" type="hidden" value="false">
+                        Hóa đơn mua hàng (đơn hàng)
+                    </label>
+                </div>
+                <div >
+                    <label>
+                        <input data-val="true" data-val-required="The WithStamp field is required." id="WithStamp" name="WithStamp" type="checkbox" value="true"><input name="WithStamp" type="hidden" value="false">
+                        Phiếu/tem bảo hành (nếu có)
+                    </label>
+                </div>
+                <div >
+                    <label>
+                        <input data-val="true" data-val-required="The WithFormReturn field is required." id="WithFormReturn" name="WithFormReturn" type="checkbox" value="true"><input name="WithFormReturn" type="hidden" value="false">
+                        Phiếu đăng ký đổi trả
+                    </label>
+                </div>
+    
+                
+    
+                <p><input id="submit" type="submit" class="btn btn-primary" value="GỬI YÊU CẦU"></p>
+            </div>
+            </div>
+            </main>
+            </body>
+            </html>
